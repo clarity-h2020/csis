@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<FRAME GUID="2FB25471-B62C-4EE6-BD43-F819C095ACF8" FORMAT="0000" APP_VERSION="2.2.0.8" CHECKSUM="AA4F625AB9FCE088">
-  <PROJECT FORMAT="1.00" NAME="Data Management Plan" AUTHOR="Pascal Dihé" CREATED="2018.11.30 08:26:50" MODIFIED="2018.11.30 09:51:16">
+<FRAME GUID="2FB25471-B62C-4EE6-BD43-F819C095ACF8" FORMAT="0000" APP_VERSION="2.2.0.8" CHECKSUM="D130F75899336AF4">
+  <PROJECT FORMAT="1.00" NAME="Data Management Plan" AUTHOR="Pascal Dihé" CREATED="2018.11.30 08:26:50" MODIFIED="2018.11.30 10:10:22">
     <DIAGRAMS>
-      <DIAGRAM FORMAT="1.00" ID="1" NAME="Create Dataset" CREATED="2018.11.30 08:29:34" MODIFIED="2018.11.30 09:51:16">
+      <DIAGRAM FORMAT="1.00" ID="1" NAME="Create Dataset" CREATED="2018.11.30 08:29:34" MODIFIED="2018.11.30 10:10:22">
         <LAYOUT FORMAT="1.00" COLUMNS="5" ROWS="13">
           <ENTRIES>
             <ENTRY COLUMN="0" ROW="6">
@@ -18,7 +18,7 @@
             </ENTRY>
             <ENTRY COLUMN="0" ROW="8">
               <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="86">
-                <TEXT><![CDATA[explain in the description why the data cannot be publishes as Open Data]]></TEXT>
+                <TEXT><![CDATA[explain in the description why the data cannot be published as Open Data]]></TEXT>
               </FIGURE>
             </ENTRY>
             <ENTRY COLUMN="0" ROW="11">
