@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<FRAME GUID="2FB25471-B62C-4EE6-BD43-F819C095ACF8" FORMAT="0000" APP_VERSION="2.2.0.8" CHECKSUM="D130F75899336AF4">
-  <PROJECT FORMAT="1.00" NAME="Data Management Plan" AUTHOR="Pascal Dihé" CREATED="2018.11.30 08:26:50" MODIFIED="2018.11.30 10:10:22">
+<FRAME GUID="2FB25471-B62C-4EE6-BD43-F819C095ACF8" FORMAT="0000" APP_VERSION="2.2.0.8" CHECKSUM="9AD1BF3AFCA3ED03">
+  <PROJECT FORMAT="1.00" NAME="Data Management Plan" AUTHOR="Pascal Dihé" CREATED="2018.11.30 08:26:50" MODIFIED="2019.01.16 12:38:51">
     <DIAGRAMS>
-      <DIAGRAM FORMAT="1.00" ID="1" NAME="Create Dataset" CREATED="2018.11.30 08:29:34" MODIFIED="2018.11.30 10:10:22">
+      <DIAGRAM FORMAT="1.00" ID="1" NAME="Create Dataset" CREATED="2018.11.30 08:29:34" MODIFIED="2019.01.16 12:38:51">
         <LAYOUT FORMAT="1.00" COLUMNS="5" ROWS="13">
           <ENTRIES>
             <ENTRY COLUMN="0" ROW="6">
               <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="44">
-                <TEXT><![CDATA[Processing and combining input data from many different sources may lead to unclear IPR situations regarding the generated output data. Such output data may not be published as Open Data.]]></TEXT>
+                <TEXT><![CDATA[Processing and combining input data from many different sources may lead to unclear IPR situations regarding the generated output data. Such output data may not be published as Open Data!]]></TEXT>
               </FIGURE>
             </ENTRY>
             <ENTRY COLUMN="0" ROW="7">
@@ -61,7 +61,7 @@ OPEN Data?]]></TEXT>
             <ENTRY COLUMN="1" ROW="8">
               <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="46">
                 <TEXT><![CDATA[assign Tag
-"open data"]]></TEXT>
+"open-data"]]></TEXT>
               </FIGURE>
             </ENTRY>
             <ENTRY COLUMN="1" ROW="9">
@@ -105,7 +105,7 @@ OPEN Data?]]></TEXT>
             <ENTRY COLUMN="2" ROW="5">
               <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="20">
                 <TEXT><![CDATA[Data PRODUCED 
-by CLARTIY?]]></TEXT>
+by CLARITY?]]></TEXT>
               </FIGURE>
             </ENTRY>
             <ENTRY COLUMN="2" ROW="6">
@@ -158,7 +158,7 @@ OPEN Data?]]></TEXT>
             <ENTRY COLUMN="3" ROW="8">
               <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="53">
                 <TEXT><![CDATA[assign Tag
-"open data"]]></TEXT>
+"open-data"]]></TEXT>
               </FIGURE>
             </ENTRY>
             <ENTRY COLUMN="3" ROW="10">
@@ -212,12 +212,12 @@ OPEN Data?]]></TEXT>
           <CONNECTION FORMAT="1.00" ID="89" FROM="88" TO="26" TEXT="" />
         </CONNECTIONS>
       </DIAGRAM>
-      <DIAGRAM FORMAT="1.00" ID="2" NAME="Add Resource" CREATED="2018.11.30 08:58:02" MODIFIED="2018.11.30 09:31:21">
+      <DIAGRAM FORMAT="1.00" ID="2" NAME="Add Resource" CREATED="2018.11.30 08:58:02" MODIFIED="2019.01.16 12:34:57">
         <LAYOUT FORMAT="1.00" COLUMNS="4" ROWS="12">
           <ENTRIES>
             <ENTRY COLUMN="0" ROW="3">
               <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="82">
-                <TEXT><![CDATA[upload data to CLARTIY sFTP]]></TEXT>
+                <TEXT><![CDATA[upload data to CLARITY sFTP]]></TEXT>
               </FIGURE>
             </ENTRY>
             <ENTRY COLUMN="0" ROW="6">
@@ -268,7 +268,7 @@ OPEN Data?]]></TEXT>
             </ENTRY>
             <ENTRY COLUMN="1" ROW="4">
               <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="22">
-                <TEXT><![CDATA[enter CLARTIY sFTP URL]]></TEXT>
+                <TEXT><![CDATA[enter CLARITY sFTP URL]]></TEXT>
               </FIGURE>
             </ENTRY>
             <ENTRY COLUMN="1" ROW="5">
@@ -279,7 +279,7 @@ OPEN Data?]]></TEXT>
             <ENTRY COLUMN="1" ROW="6">
               <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="7">
                 <TEXT><![CDATA[Data PRODUCED 
-by CLARTIY?]]></TEXT>
+by CLARITY?]]></TEXT>
               </FIGURE>
             </ENTRY>
             <ENTRY COLUMN="1" ROW="7">
@@ -309,7 +309,7 @@ by CLARTIY?]]></TEXT>
             </ENTRY>
             <ENTRY COLUMN="3" ROW="3">
               <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="69">
-                <TEXT><![CDATA[upload data to CLARTIY sFTP]]></TEXT>
+                <TEXT><![CDATA[upload data to CLARITY sFTP]]></TEXT>
               </FIGURE>
             </ENTRY>
             <ENTRY COLUMN="3" ROW="6">
