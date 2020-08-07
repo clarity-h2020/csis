@@ -6,7 +6,7 @@ The CLARTIY CSIS as such consists of a set of docker-containers and is deployed 
 
 ## CSIS Development System
 
-The CSIS Development System is deployed at virtual server `csis-dev.ait.ac.at` and is reachable under the URL [csis-dev.myclimateservice.eu](https://csis-dev.myclimateservice.eu/). Each subfolder of the `/docker/` directory contains a docker-compose.yml file to control the respective service groups. For each service groups, a respective GitHub repository exists in [organisation clarity-h2020](https://github.com/clarity-h2020/). It contains a `readme.md` file that provides regarding implementation, configuration, backups, upgrading, etc.
+The CSIS Development System is deployed at virtual server `csis-dev.ait.ac.at` and is reachable under the URL [csis-dev.myclimateservice.eu](https://csis-dev.myclimateservice.eu/). Each subfolder of the `/docker/` directory contains a docker-compose.yml file to control the respective service groups. For each service groups, a respective GitHub repository exists in [organisation clarity-h2020](https://github.com/clarity-h2020/). It contains a `readme.md` file that provides more information regarding implementation, configuration, backups, upgrading, etc.
 
 ![csis-dev.ait.ac.at](https://raw.githubusercontent.com/clarity-h2020/csis/master/images/csis-dev.ait.ac.at.svg)
 
@@ -65,7 +65,7 @@ The CSIS Production System is deployed at virtual server `csis.ait.ac.at` and is
 
 ![csis.ait.ac.at](https://raw.githubusercontent.com/clarity-h2020/csis/master/images/csis.ait.ac.at.svg)
 
-For most service groups that are deployed at the production virtual server, separate development and production branches exist in the respective GitHub repository. The name of the branches are `dev` and `master` or `csis-dev.ait.ac` and `csis-dev.ait.ac`. Refer to [docker-duplicity](https://github.com/clarity-h2020/docker-duplicity#backed-up-directories) and [map-component](https://github.com/clarity-h2020/map-component#map-component) for an example.
+For most service groups that are deployed at the production virtual server, separate development and production branches exist in the respective GitHub repository. The name of the branches are `dev` and `master` or `csis-dev.ait.ac.at` and `csis.ait.ac.at`. Refer to [docker-duplicity](https://github.com/clarity-h2020/docker-duplicity#backed-up-directories) and [map-component](https://github.com/clarity-h2020/map-component#map-component) for an example.
 
 ### hoster
 
