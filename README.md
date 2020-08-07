@@ -63,7 +63,7 @@ Access to CKAN password protected. Refer to the CLARTIY mailing list or `/docker
 
 The CSIS Production System is deployed at virtual server `csis.ait.ac.at` and is reachable under the URL [csis.myclimateservice.eu](https://csis.myclimateservice.eu/). Synchronisation between deployment and production system is described in [Synchronisation between DEV and PROD](https://github.com/clarity-h2020/docker-drupal#synchronisation-between-dev-and-prod).
 
-![csis.ait.ac.at](https://raw.githubusercontent.com/clarity-h2020/csis/master/images/csis-dev.ait.ac.at.svg)
+![csis.ait.ac.at](https://raw.githubusercontent.com/clarity-h2020/csis/master/images/csis.ait.ac.at.svg)
 
 For most service groups that are deployed at the production virtual server, separate development and production branches exist in the respective GitHub repository. The name of the branches are `dev` and `master` or `csis-dev.ait.ac` and `csis-dev.ait.ac`. Refer to [docker-duplicity](https://github.com/clarity-h2020/docker-duplicity#backed-up-directories) and [map-component](https://github.com/clarity-h2020/map-component#map-component) for an example.
 
@@ -95,24 +95,28 @@ The CSIS relies on several external services and application that are not deploy
 
 ### myclimateservices profile service
 
+**TODO** [@fgeyer16](https://github.com/fgeyer16): Please update [readme.md](https://github.com/clarity-h2020/csis/#myclimateservices-profile-service) and provide a description for profiles service and single-sign-on. See [ckan](https://github.com/clarity-h2020/ckan/blob/csis-dev.ait.ac.at/README.md) or [docker-drupal](https://github.com/clarity-h2020/docker-drupal/blob/dev/README.md) for an example.
+
 - **repository**: ???
 - **public endpoint**: [profile.myclimateservices.eu](https://profile.myclimateservices.eu/)
 
 ### AIT EMIKAT
 
-**TODO** @humer: Provide deployment description for EMIKAT. See [ckan](https://github.com/clarity-h2020/ckan/blob/csis-dev.ait.ac.at/README.md) or [docker-drupal](https://github.com/clarity-h2020/docker-drupal/blob/dev/README.md) for an example.
+**TODO** [@humer](https://github.com/Humer): Please update [emikat/readme.md](https://github.com/clarity-h2020/emikat/blob/master/README.md) and [csis/readme.md](https://github.com/clarity-h2020/csis/blob/master/README.md#ait-emikat) and provide implementation and deployment description for EMIKAT. See [ckan](https://github.com/clarity-h2020/ckan/blob/csis-dev.ait.ac.at/README.md) or [docker-drupal](https://github.com/clarity-h2020/docker-drupal/blob/dev/README.md) for an example.
 
 - **repository**: [docker-duplicity](https://github.com/clarity-h2020/docker-duplicity)
 - **public endpoints**: [See Services endpoints \(used by CSIS\)](https://github.com/clarity-h2020/csis/wiki/Services-endpoints-\(used-by-CSIS\))
 
 ### ATOS GeoServer
 
-**TODO** @humer: Provide deployment description for ATOS GeoServer. See [ckan](https://github.com/clarity-h2020/ckan/blob/csis-dev.ait.ac.at/README.md) or [docker-drupal](https://github.com/clarity-h2020/docker-drupal/blob/dev/README.md) for an example.
+**TODO** [@DanielRodera](https://github.com/DanielRodera): Please update [readme.md](https://github.com/clarity-h2020/csis/blob/master/README.md#atos-geoserver) and provide deployment description for ATOS GeoServer. See [ckan](https://github.com/clarity-h2020/ckan/blob/csis-dev.ait.ac.at/README.md) or [docker-drupal](https://github.com/clarity-h2020/docker-drupal/blob/dev/README.md) for an example.
 
 - **repository**: n/a
 - **public endpoint**: [geoserver.myclimateservice.eu](https://geoserver.myclimateservice.eu/geoserver/web/)
 
 ### METEOGRID Transport Application
+
+**TODO** [@ghilbrae](https://github.com/ghilbrae): Please update [readme.md](https://github.com/clarity-h2020/csis/blob/master/README.md#meteogrid-transport-application) and provide a description for the Transport Application. See [ckan](https://github.com/clarity-h2020/ckan/blob/csis-dev.ait.ac.at/README.md) or [docker-drupal](https://github.com/clarity-h2020/docker-drupal/blob/dev/README.md) for an example.
 
 - **repository**: ???
 - **public endpoint**: [clarity.saver.red](https://clarity.saver.red/)
