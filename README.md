@@ -118,8 +118,73 @@ The CSIS relies on several external services and application that are not deploy
 
 **TODO** [@ghilbrae](https://github.com/ghilbrae): Please update [readme.md](https://github.com/clarity-h2020/csis/blob/master/README.md#meteogrid-transport-application) and provide a description for the Transport Application. See [ckan](https://github.com/clarity-h2020/ckan/blob/csis-dev.ait.ac.at/README.md) or [docker-drupal](https://github.com/clarity-h2020/docker-drupal/blob/dev/README.md) for an example.
 
+The Transport Module aims to incorporate natural risks in the context of Climate Change into the design and management of the transport infrastructure; it is meant to provide the user with a tool that facilitates the risk assessment of a road project in the face of climate variability and change. It addresses the needs of several types of potential users who in turn will demand different climate information with a different focus.
+
+It has been developed as an external tool that has been integrated into the CSIS. It can be accessed from within the CSIS and exchanges information with it to ensure that the users have a seamless experience when using the tool for their transport studies.
+
+#### Implementation
+
+The Transport Module architecture follows a traditional MVC model using the [Django web framework](!https://www.djangoproject.com/) as base technology along with:
+
+* [Mezzanine](!http://mezzanine.jupo.org/), an Open Source Content Management Platform using the Django framework
+* [PostgreSQL](!https://www.postgresql.org/) database
+* Javascript, front-end development
+* [Openlayers](!https://openlayers.org/) a high-performance, feature-packed library for all your mapping needs
+
+The integration with the CSIS is made using an API that has been developed using the existing Django infrastructure.
+
+#### Deployment
+
+The deployment of the TM needs a Linux-based OS in which the following packages must be installed:
+
+* python3-mapnik
+* python3-psycopg2
+* python-dev
+* build-essential
+* virtualenvwrapper
+* postgis
+* git
+* gfortran
+* nodejs
+
+Once available, the application can be obtained from the repository on any directory that the administrator deems suitable.
+
+```sh
+git clone ssh://git@gitlab.meteogrid.com:20023/meteogrid/emmet.git
+cd emmet
+```
+
+Then it is needed to set up the database:
+```sh
+sudo su - postgres
+createuser [USERNAME]
+createdb -O [USERNAME] emmet_beta
+psql emmet
+ create extension postgis;
+exit
+```
+
+A python virtual environment is then set up:
+```sh
+mkvirtualenv --system-site-packages --python=/usr/bin/python3 emmet
+workon emmet
+pip install -r requirements.txt
+```
+
+and the javascript packages needed are installed and built using **npm**:
+```sh
+npm install
+npm run-script build
+```
+
+The next step is to configure the Django application. To do that a local settings file is needed in which the information regarding the database, and other local paths must be supplied. A copy of this file can be found in the repository: [local_settings.py](!https://gitlab.meteogrid.com/meteogrid/emmet/snippets/28). More information on this file and its options can be found in Django documentation pages: [Settings](!https://docs.djangoproject.com/en/2.2/ref/settings/)
+
+Lastly the database needs to be set up from an existing dump in which all the necessary data for the TM to work has already been set. The dump file is available in the repository as a json file and can be imported into the freshly installed system by using: 
+
+```sh
+python manage.py loaddata < dumped_data.json
+```
+A web server is also needed to serve the application. The TM will work with either Apache HTTP Server or Nginx. The configuration of any of these web servers will depend on the system in which it is being installed and the best approach is to follow the documentation of the selected web server.
+
 - **repository**: [gitlab.meteogrid.com/meteogrid/emmet](https://gitlab.meteogrid.com/meteogrid/emmet)
 - **public endpoint**: [clarity.saver.red](https://clarity.saver.red/)
-
-
-
