@@ -97,7 +97,7 @@ The CSIS relies on several external services and application that are not deploy
 
 **TODO** [@fgeyer16](https://github.com/fgeyer16): Please update [readme.md](https://github.com/clarity-h2020/csis/#myclimateservices-profile-service) and provide a description for profiles service and single-sign-on. See [ckan](https://github.com/clarity-h2020/ckan/blob/csis-dev.ait.ac.at/README.md) or [docker-drupal](https://github.com/clarity-h2020/docker-drupal/blob/dev/README.md) for an example.
 
-- **repository**: ???
+- **repository**: https://gitlab.com/smart-cities-consulting/mcs-profile
 - **public endpoint**: [profile.myclimateservices.eu](https://profile.myclimateservices.eu/)
 
 ### AIT EMIKAT
