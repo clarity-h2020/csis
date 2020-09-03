@@ -97,6 +97,55 @@ The CSIS relies on several external services and application that are not deploy
 
 **TODO** [@fgeyer16](https://github.com/fgeyer16): Please update [readme.md](https://github.com/clarity-h2020/csis/#myclimateservices-profile-service) and provide a description for profiles service and single-sign-on. See [ckan](https://github.com/clarity-h2020/ckan/blob/csis-dev.ait.ac.at/README.md) or [docker-drupal](https://github.com/clarity-h2020/docker-drupal/blob/dev/README.md) for an example.
 
+
+The myclimateservices profile service is the central place for the administration of user and organisation data. This is the page on which the user registers for all other services of myclimateservices.eu (CSIS, events, marketplace) and maintains his profile and the profile of his organisation(s). profile.myclimateservices.eu is also the point of Single Sign On (SSO) for all services of myclimateservices.eu. The single pages will only receive the data of the users profile, which are needed for that service. 
+
+#### Implementation ####
+
+The profile service is implemented as Drupl 8 instance. To provide the Single Sign On functionality the contributed Drupal 8 CAS server module is used. So the other services implemented in Drupal 8 can use the Drupal CAS module to participate on the Single Sign On. 
+The parts of the user profile needed for a specific Service can be exposed to the service
+* as CAS attributes during the SSO process or
+* as a REST endpoint at https://myclimateservices.eu
+
+#### Deployment ####
+
+The profile service is deployed as composer project. The only requirement is a LAMP system (Linux Apache Mysql PHP web server) with installed php package manager [composer](https://getcomposer.org/). Please prepare a website in the webservers configuration. You will need access credentials to the composer repository of myclimateservices.eu
+
+##### Installing the code base #####
+Only code dedicated to the profile service is located in the repository. All other code is managed by composer packages. To get the whole code for running the Drupal website:
+
+```bash
+cd /path/to/website
+git clone https://gitlab.com/smart-cities-consulting/mcs-profile.git ./
+composer install
+composer drupal:scaffold
+
+```
+
+##### Install Drupal #####
+
+Create a database for the System:
+
+```bash
+mysql -u root -p
+CREATE DATABASE <databasename>;
+GRANT ALL PRIVILEGES on <databasename>.* to "<dbuser>"@"localhost" IDENTIFIED BY "<password>";
+```
+Open a web browser and visit the url of the page. 
+Follow the install wizard of Drupal 8 and enter your database credentials when asked
+
+##### import Drupals configuration #####
+
+```bash
+cd /path/to/website
+vim web/sites/default/setting.php  -> $config_directories['sync'] = '../config/sync';
+vendor/bin/drush cim 
+vendor/bin/drush cr
+
+```
+
+
+
 - **repository**: https://gitlab.com/smart-cities-consulting/mcs-profile
 - **public endpoint**: [profile.myclimateservices.eu](https://profile.myclimateservices.eu/)
 
